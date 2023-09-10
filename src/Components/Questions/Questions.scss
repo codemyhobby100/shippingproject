@@ -67,3 +67,40 @@
         border-radius: 10px 10px 0 0;
     }
 }
+
+.questions{
+    .secHeadimg{
+        h3,h4{
+            padding-bottom: 1.3rem;
+        }
+        p{
+            font-size: var(--smallFontSize);
+            color: var(--blackColor);
+            padding-bottom: 1rem;
+        }
+    }
+
+    .form{
+        .formContent{
+            gap: 1rem;
+            input, textarea{
+                background: var(--cardColor);
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                outline: none;
+                border-radius: var(--borderRadius);
+                &::placeholder{
+                    font-size: var(--smallFontSize);
+                    color: var(--blackColor);
+                }
+            }
+
+            textarea{
+                height: 100px;
+                border-radius: 10px;
+                resize: none;
+            }
+        }
+    }
+}

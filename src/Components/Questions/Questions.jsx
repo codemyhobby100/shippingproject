@@ -32,7 +32,7 @@ const Questions = () => {
            />
 
           <Accordion
-            title="What are the right places to visit"
+            title="Why yoy should visit these places"
             desc="Consider your interest, budget, desired experiences, and the type of environment you enjoy.
             Research desitnations that align with your peferences and offer attractions or activities you find appealing."
             active={active}
@@ -40,7 +40,7 @@ const Questions = () => {
            /> 
 
           <Accordion
-            title="What are the right places to visit"
+            title="Our Pricing plan"
             desc="Consider your interest, budget, desired experiences, and the type of environment you enjoy.
             Research desitnations that align with your peferences and offer attractions or activities you find appealing."
             active={active}

@@ -2,7 +2,11 @@ import React from 'react';
 import "./Home.css"
 
 // import assets
-import Video from '../../Assets/video2.mp4'
+import Video from '../../Assets/video2.mp4';
+import image1 from '../../assets/ship1.jpg';
+import image2 from '../../assets/ship2.jpg';
+import image3 from '../../assets/ship3.jpg';
+import image4 from '../../assets/ship4.jpg';
 
 // Icon
 import {AiOutlineSwapRight} from 'react-icons/ai'
@@ -20,14 +24,14 @@ const Home = () => {
         <button className='btn flex'>GET STARTED  <AiOutlineSwapRight className="icon"/></button>
       </div>
 
-      <div className="poplularPlaces">
+      <div className="popularPlaces">
         <div className="content">
           <h3>Popular Places</h3>
           <div className="images flex">
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
+            <img src={image1} alt="" />
+            <img src={image2} alt="" />
+            <img src={image3} alt="" />
+            <img src={image4} alt="" />
           </div>
         </div>
       </div>
