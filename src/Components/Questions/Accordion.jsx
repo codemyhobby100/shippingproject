@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Questions.css'
 
 // Icons
-import { BsArrowDownCircle, BsArrowUpCircle } from 'react-icons/bs';
+import { BsArrowUpCircle } from 'react-icons/bs';
+import { BsArrowDownCircle } from 'react-icons/bs';
 
-const Accordion = ({title, desc, active, setActive}) => {
+// AOS
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-  return (
-    <div className='accordionContainer'>
-        <span className={(active === title ? 'activeTitle' : '') + " title" + " flex"}>
+const Accordion = ({ title, desc, active, setActive }) => {
+
+    useEffect(() =>{
+        Aos.init({ duration: 2000});
+    }, [])
+    
+  return (   
+    <div className='accordionContainer' data-aos="fade-up">
+        <span className={(active === title ? "activeTitle" : "") + " title" + " flex"}>
             {title}
             <span onClick={() => setActive(title)}>
                 {active === title ? (
