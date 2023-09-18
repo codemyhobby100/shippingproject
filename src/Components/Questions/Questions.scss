@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,700&display=swap');
 
 
 // All colors used in project
@@ -31,7 +31,9 @@
         padding: 1rem;
         border-radius: 10px;
         justify-content: space-between;
-        background: var(--primaryColorLight);
+        // background: var(--primaryColorLight);
+        background: #ffe0e4;
+        transition: .5s;
 
         span{
             cursor: pointer !important;
@@ -39,6 +41,7 @@
                 font-size: 1.2rem;
                 cursor: pointer;
                 color: var(--blackColor);
+                transition: .5s;
             }
         }
     }
@@ -56,16 +59,20 @@
         background: var(--cardColor) !important;
         border-radius: 0 0 10px 10px;
         color: var(--blackColor);
+        transition: .5s;
     }
 
     .show{
         height: 140px;
         opacity: 1;
+        transition: .5s;
     }
 
     .activeTitle{
-        background: var(--primaryColorLight);
+        // background: var(--primaryColorLight);
+        background: #fdd8dd;
         border-radius: 10px 10px 0 0;
+        transition: .5s;
     }
 }
 
@@ -119,12 +126,17 @@
                 }
             }
         }
-
+        p{
+            transition: all .5s ease-in-out;
+        }
         .description{
             font-size: var(--normalFontSize);
+            display: none;
+            height: 0px;
         }
 
         .show{
+            display: inline-block;
             height: 150px;
         }
     }
@@ -132,7 +144,7 @@
     .questions{
         .secHeadimg{
             h3,h4{
-                font-size: var(--h2FontSize);
+                font-size: var(--h1FontSize);
             }
 
             p{

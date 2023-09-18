@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,700&display=swap");
 :root {
   --primaryColor: hsl(14, 90%, 53%);
   --primaryColorLight: hsl(14, 96%, 91%);
@@ -20,7 +20,7 @@
 }
 
 .footer {
-  background: var(--primaryColorLight);
+  background: #CCCCCC;
   padding: 2rem 0;
 }
 .footer .secContainer {
@@ -48,13 +48,15 @@
 }
 .footer .secContainer .logoDiv .socials .icon {
   font-size: 25px;
-  background: var(--primaryColor);
+  background: #f41c39;
   border-radius: 50%;
   padding: 8px;
   color: var(--whiteColor);
+  transition: 0.5s;
 }
 .footer .secContainer .logoDiv .socials .icon:hover {
-  background: var(--primaryColorLight);
+  color: #333333;
+  background: #EEEEEE;
 }
 .footer .secContainer .footerLinks {
   display: grid;

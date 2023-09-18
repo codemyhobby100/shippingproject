@@ -8,6 +8,7 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Questions from './Components/Questions/Questions'
 import Reviews from './Components/Reviews/Reviews'
 import Subscribe from './Components/Subscribe/Subscribe'
+// import SecAccordion from './Components/SecondAccoirdion/SecAccordion'
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <Reviews></Reviews>
       <Questions></Questions>
       <Subscribe></Subscribe>
+      {/* <SecAccordion></SecAccordion> */}
       <Footer></Footer>
     </div>
   )
