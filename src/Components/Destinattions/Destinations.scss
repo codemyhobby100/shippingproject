@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,700&display=swap');
 
 // All colors used in project
 :root{
@@ -27,7 +26,8 @@
 .destination{
     .secContainer{
         .redText{
-            color: var(--primaryColor);
+            // color: var(--primaryColor);
+            color: #f41c39;
             font-size: var(--smallFontSize);
             font-weight: 500;
         }
@@ -40,7 +40,8 @@
             margin-top: 2rem;
             gap: 1rem;
             .inputField{
-                background-color: var(--primaryColorLight);
+                // background-color: var(--primaryColorLight);
+                background-color: #CCCCCC;
                 padding: 1rem;
                 border-radius: var(--borderRadius);
                 gap: .5rem;

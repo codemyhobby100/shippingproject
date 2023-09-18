@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,700&display=swap');
 
 
 // All colors used in project
@@ -30,7 +30,7 @@
             .redText{
                 font-size: var(--smallFontSize);
                 display: block;
-                color: var(--primaryColor);
+                color: #f41c39;
                 font-weight: 700;
             }
 
@@ -48,7 +48,7 @@
                 gap: .4rem;
                 padding: 1rem 0;
                 .icon{
-                    color: var(--primaryColor);
+                    color: #f41c39;
                     font-size: var(--h3FontSize);
                 }
             }
@@ -61,7 +61,7 @@
                     border-radius: 50%;
                     object-fit: cover;
                     border: 2px solid rgb(255, 255, 255);
-                    box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+                    box-shadow: 0 0 2px 2px rgb(251, 194, 194);
                 }
             }
         }
@@ -81,6 +81,7 @@
 @media screen and (min-width: 480px){
     .review{
         .secContainer{
+            grid-template-columns: repeat(1, 1fr);
             .textDiv{
                 .redText{
                     font-size: var(--normalFontSize);

@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 // All colors used in project
 :root{
-    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColor: #C01E33;
     --primaryColorLight: hsl(14, 96%, 91%);
     --bgColor: hsl(0, 0%, 100%);
     --formColor: hsl(20, 42%, 87%);
     --whiteColor: hsl(0, 0%, 100%);
     --blackColor: hsl(0, 0%, 18%);
-    --greyText: hsl(0, 0%, 51%);
+    --greyText: #A6B2BE;
     --inputColor: hsl(330, 12%, 97%);
     --cardColor: hsl(300, 3%, 94%);
 
@@ -79,7 +79,8 @@ img, video{
     border-radius: var(--borderRadius);
     padding: .8rem 1rem;
     color: var(--whiteColor);
-    background: var(--primaryColor);
+    // background: var(--primaryColor);
+    background: #f41c39;
 
     &{
         transition: .3s ease;
@@ -117,8 +118,10 @@ img, video{
 }
 
 .btn:hover{
-    color: var(--primaryColor);
-    background: var(--primaryColorLight);
+    // color: var(--primaryColor);
+    // background: var(--primaryColorLight);
+    color: #333333;
+    background: #CCCCCC;
 }
 
 .section{
@@ -131,18 +134,21 @@ img, video{
 }
 
 ::selection{
-    background: var(--primaryColorLight);
-    color: var(--primaryColor);
+    // background: var(--primaryColorLight);
+    // color: var(--primaryColor);
+    color: #fff;
+    background: #f41c39;
 }
 
 ::-webkit-scrollbar{
     width: 10px;
-    background: var(--primaryColorLight);
+    background: #666666;
 }
 
 ::-webkit-scrollbar-thumb{
     width: 10px;
-    background: var(--primaryColor);
+    // background: var(--primaryColor);
+    background: #999999;
     border-radius: var(--borderRadius);
 }
 
