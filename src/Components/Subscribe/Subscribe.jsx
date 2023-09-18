@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import "./Subscribe.css";
 
-import Image from '../../assets/perfil.png'
+import Image from '../../assets/map.png'
 
 // AOS
 import Aos from 'aos';

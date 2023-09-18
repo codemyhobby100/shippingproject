@@ -13,13 +13,13 @@ const Questions = () => {
   }, [])
 
   const [active, setActive] = useState(
-    "How do I choose the right travel destinstion for me?"
+    true
     );
 
   return (
     <div className='questions section container'>
       <div className="secHeading">
-        <h3>Frequently Asked Questions</h3>
+        <h1 className='accTitle'>Frequently Asked Questions</h1>
       </div>
       <div className="secContainer grid">
         

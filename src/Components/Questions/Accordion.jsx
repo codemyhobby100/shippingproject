@@ -19,14 +19,15 @@ const Accordion = ({ title, desc, active, setActive }) => {
     <div className='accordionContainer' data-aos="fade-up">
         <span className={(active === title ? "activeTitle" : "") + " title" + " flex"}>
             {title}
-            <span onClick={() => setActive(title)}>
+            <span  style={{cursor: "pointer"}}>
                 {active === title ? (
-                    <BsArrowDownCircle className='icon'/>
+                    <BsArrowDownCircle className='icon' onClick={() => setActive("This is somt")}/>
                 ) : (                    
-                    <BsArrowUpCircle className='icon'/>
+                    <BsArrowUpCircle className='icon' onClick={() => setActive(title)}/>
                 )}
             </span>            
         </span>
+          
         <p className={(active === title ? "show" : "") + " description"}>
             {desc}
         </p>
