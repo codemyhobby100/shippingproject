@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       <div className="sectionText">
-        <h1 data-aos='fade-up'>Unlock Your Travel Dreams With Us!</h1>
+        <h1 data-aos='fade-up'>Shipping made easy!</h1>
         <p data-aos='fade-up'>Discover the world's most adventurous nature, life is sho short for a trip.</p>
         <button className='btn flex' data-aos='fade-up'>GET STARTED  <AiOutlineSwapRight className="icon"/></button>
       </div>
