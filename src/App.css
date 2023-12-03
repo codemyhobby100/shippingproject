@@ -76,6 +76,10 @@ img, video {
   color: var(--whiteColor);
   background: #f41c39;
 }
+
+.btn a{
+  color: #fff;
+}
 .btn {
   transition: 0.3s ease;
 }

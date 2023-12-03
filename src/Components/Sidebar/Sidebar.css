@@ -1,0 +1,47 @@
+/* Sidebar styles */
+
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Set sidebar height to 100% of viewport height */
+    background-color: #ccc;
+    color: #fff;
+    padding-top: 60px; /* Adjust top padding for menu spacing */
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    
+    margin: 5rem 0;
+    padding: 15px 0px;
+    margin-left: auto;
+    transition: .3s ease-in-out;
+  }
+
+  .sidebar-menu li.active{
+    border-right: solid #f41c39 7px;
+  }
+
+  .sidebar-menu li:hover{
+    border-right: solid #f41c39 7px;
+    /* padding: 15px 0px; */
+  }
+  
+  .sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+  }
+  

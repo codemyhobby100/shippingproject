@@ -1,0 +1,99 @@
+/* LoginForm.css */
+.loginFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginForm {
+    width: 300px;
+    padding: 40px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .loginForm h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    background-color: #f41c39;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .google-btn {
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .google-btn .google-icon{
+    padding-top: 4px;
+    font-size: 18px;
+  }
+
+  .google-btn .google-text{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .login-btn:hover {
+    background-color: #C01E33;
+  }
+
+  .login-txt{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .login-txt a{
+    font-weight: 700;
+    color: #000;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 480px) {
+    .loginForm {
+      width: 80%;
+    }
+  }
+  

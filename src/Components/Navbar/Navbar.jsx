@@ -5,6 +5,7 @@ import "./Navbar.css";
 import {BiLogoMediumOld} from 'react-icons/bi';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {PiDotsNineBold} from 'react-icons/pi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     // State to check to track and update navbar
@@ -37,7 +38,7 @@ const Navbar = () => {
             {/* Icon to close navbar */}
             <AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar}/>
         </div>
-        <button className='signUpBtn btn'>Sign Up</button>
+        <button className='signUpBtn btn'><Link to='/signin'>Sign Up</Link> </button>
         {/* Icon to toggle navbar*/}
         <PiDotsNineBold className='icon menuIcon' onClick={showNavBar}/>
 
