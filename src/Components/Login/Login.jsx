@@ -12,44 +12,43 @@ const Login = () => {
   const [password, setPassword] = useState('');  
   const navigate = useNavigate()
 
-  const signIn = (e) => {
+  const signInWithEmailAndPasswordHandler = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
+      .then((userCredential) => {
         console.log("success")
-        navigate('/dashboardpage')
-    }).catch((error) => {
+        navigate('/dashboardpage');
+      }).catch((error) => {
         console.log(error.message);
-    })
-}
+      });
+  }
 
 
-    const handleClick = (e)=>{
-        e.preventDefault();
-        signInWithPopup(auth, provider).then(async (data) => {
-            const credential = GoogleAuthProvider.credentialFromResult(data);
-            // The signed-in user info.
-            const user = data.user  
 
-            if (user) {
-                const userRef = doc(db, 'users', user.uid);
-                await setDoc(userRef, {
-                  email: user.email,
-                });
-                // dispatch(setUser(user));
+    const handleGoogleSignIn = (e) => {
+      e.preventDefault();
+      signInWithPopup(auth, provider)
+        .then(async (data) => {
+          const credential = GoogleAuthProvider.credentialFromResult(data);
+          const user = data.user;
 
-              }
-            console.log(credential) 
-            console.log(user) 
-            navigate('/dashboardpage')
-           
+          if (user) {
+            const userRef = doc(db, 'users', user.uid);
+            await setDoc(userRef, { email: user.email });
+          }
+
+          console.log(credential);
+          console.log(user);
+          navigate('/dashboardpage');
         })
-    }
-
+        .catch((error) => {
+          console.log(error.message);
+        });
+    };
 
   return (
     <div className="loginFormContainer">
-      <form className="loginForm" onSubmit={signIn}>
+      <form className="loginForm" onSubmit={signInWithEmailAndPasswordHandler}>
         <h2>Sign in</h2>
         <div className="formGroup">
           <label htmlFor="email">Email</label>
@@ -73,11 +72,11 @@ const Login = () => {
             required="required"
           />
         </div>
-        <button className='google-btn' onClick={handleClick} type="submit"> 
+        <button className='google-btn' onClick={handleGoogleSignIn} type="button"> 
             <span className='google-icon'><FcGoogle /></span> 
             <span className='google-text'>Google Sigin</span> 
         </button>
-        <button className='login-btn' onClick={signIn} type="submit">Login</button>
+        <button className='login-btn' onClick={signInWithEmailAndPassword} type="submit">Login</button>
         <div className="login-txt">Don't have an account?    <Link to='/signup'>Sign up</Link></div>
       </form>
     </div>
