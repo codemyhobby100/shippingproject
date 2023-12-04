@@ -74,7 +74,7 @@ const Login = () => {
         </div>
         <button className='google-btn' onClick={handleGoogleSignIn} type="button"> 
             <span className='google-icon'><FcGoogle /></span> 
-            <span className='google-text'>Google Sigin</span> 
+            <span className='google-text'>Google Signin</span> 
         </button>
         <button className='login-btn' onClick={signInWithEmailAndPassword} type="submit">Login</button>
         <div className="login-txt">Don't have an account?    <Link to='/signup'>Sign up</Link></div>
